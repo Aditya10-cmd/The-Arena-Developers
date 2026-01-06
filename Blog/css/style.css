@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 30px;
+  text-align: center;
+  background: #ddd;
+}
+
+.posts {
+  padding: 20px;
+}
+
+article {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 12px;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.content {
+  padding: 20px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

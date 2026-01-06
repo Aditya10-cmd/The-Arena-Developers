@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Welcome to my personal website!</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <button id="themeToggle">🌙</button>
+  </nav>
+
+  <main>
+    <!-- ABOUT -->
+    <button class="toggle-btn" onclick="toggleAbout()">Show / Hide About</button>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="./images/proffesional.png" alt="Profile photo" />
+      <p>
+        Hello! I'm a passionate web developer who loves building clean and
+        functional websites. I enjoy learning new technologies and
+        continuously improving my skills.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Clean UI</li>
+        <li>Responsive Web Design</li>
+      </ul>
+    </section>
+
+    <!-- IMAGE SLIDER -->
+    <section>
+      <h2>Gallery</h2>
+      <div class="slider">
+        <img id="sliderImage" src="./images/1.jpg" />
+        <div class="slider-btns">
+          <button onclick="prevImage()">⬅</button>
+          <button onclick="nextImage()">➡</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TODO -->
+    <section>
+      <h2>To-Do List</h2>
+      <div class="todo">
+        <input type="text" id="taskInput" placeholder="Enter task" />
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <label>Name</label>
+        <input type="text" name="name" />
+        <small id="nameError"></small>
+
+        <label>Email</label>
+        <input type="email" name="email" />
+        <small id="emailError"></small>
+
+        <label>Message</label>
+        <textarea name="message" rows="5"></textarea>
+        <small id="messageError"></small>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

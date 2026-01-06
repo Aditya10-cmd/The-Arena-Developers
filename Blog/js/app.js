@@ -1,0 +1,3 @@
+function readMore() {
+  alert("This feature will be added soon!");
+}

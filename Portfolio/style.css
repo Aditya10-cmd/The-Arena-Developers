@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: #0f172a;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav button {
+  background: #38bdf8;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* MAIN */
+main {
+  display: grid;
+  gap: 3rem;
+  padding: 3rem 10%;
+}
+
+/* SECTIONS */
+section {
+  background: white;
+  color: #1f2937;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1e40af;
+}
+
+/* ABOUT */
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#about img {
+  width: 280px;
+  border-radius: 12px;
+}
+
+/* SKILLS */
+#skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  list-style: none;
+}
+
+#skills li {
+  background: #e0f2fe;
+  padding: 0.8rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* SLIDER */
+.slider {
+  text-align: center;
+}
+
+.slider img {
+  width: 300px;
+  border-radius: 12px;
+}
+
+.slider-btns button {
+  margin: 1rem;
+}
+
+/* TODO */
+.todo input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.todo ul {
+  margin-top: 1rem;
+}
+
+.todo li {
+  margin-bottom: 0.5rem;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input,
+textarea {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+small {
+  color: red;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #020617;
+}
+
+/* DARK MODE */
+.dark {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.dark section {
+  background: #020617;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  main {
+    padding: 2rem 5%;
+  }
+}
